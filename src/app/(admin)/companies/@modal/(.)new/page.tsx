@@ -6,9 +6,7 @@ import CompanyFormModal from '@/app/components/company-form-modal';
 // import CompanyForm from '@/app/components/company-form';
 // import Modal from '@/app/components/modal';
 
-export interface PageProps {}
-
-export default function Page({}: PageProps) {
+export default function Page() {
   const router = useRouter();
   return (
     // <Modal show={true} onClose={() => router.back()}>

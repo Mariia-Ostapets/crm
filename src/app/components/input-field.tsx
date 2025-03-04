@@ -3,9 +3,15 @@
 import React from 'react';
 import { Field, FieldAttributes } from 'formik';
 
+// export interface InputFieldProps
+//   extends React.InputHTMLAttributes<HTMLInputElement>,
+//     Pick<FieldAttributes<string>, 'as'> {
+//   label?: string;
+// }
+
 export interface InputFieldProps
   extends React.InputHTMLAttributes<HTMLInputElement>,
-    Pick<FieldAttributes<string>, 'as'> {
+    Partial<Pick<FieldAttributes<string>, 'as'>> {
   label?: string;
 }
 
