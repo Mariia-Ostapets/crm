@@ -15,10 +15,6 @@ export default function Page({}: PageProps) {
     //   <CompanyForm onSubmit={console.log} />
     // </Modal>
 
-    <CompanyFormModal
-      onSubmit={console.log}
-      show={true}
-      onClose={() => router.back()}
-    />
+    <CompanyFormModal show={true} onClose={() => router.back()} />
   );
 }
